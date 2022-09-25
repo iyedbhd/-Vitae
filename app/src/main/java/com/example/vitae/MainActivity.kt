@@ -6,6 +6,7 @@ import android.text.TextUtils
 import android.util.Patterns.EMAIL_ADDRESS
 import android.view.View
 import android.widget.EditText
+import android.widget.RadioButton
 import android.widget.SeekBar
 import android.widget.Toast
 
@@ -64,6 +65,23 @@ class MainActivity : AppCompatActivity() {
     }
     fun reset(view: View)
     {
+        val Name = findViewById<EditText>(R.id.fullnameTxt)
+        val Age = findViewById<EditText>(R.id.ageTxt)
+        val Email = findViewById<EditText>(R.id.emailTxt)
+        val iOSSeekBar = findViewById<SeekBar>(R.id.iosSkill);
+        val androidSeekBar = findViewById<SeekBar>(R.id.androidSkill);
+        val flutterSeekBar = findViewById<SeekBar>(R.id.flutterSkill);
+        val hommeGender = findViewById<RadioButton>(R.id.hommeRadio);
+
+
+        Name.setText("");
+        Age.setText("");
+        Email.setText("");
+        iOSSeekBar.setProgress(0, );
+        androidSeekBar.setProgress(0 );
+        flutterSeekBar.setProgress(0 );
+        hommeGender.setChecked(true);
+
 
     }
 
